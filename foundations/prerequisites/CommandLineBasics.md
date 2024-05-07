@@ -50,3 +50,21 @@
 
 15. sort -n lengths.txt | head -n 1
 - | is a pipe. tells the shell that we want to use the output of the comand on the left as the input to the command on the right
+
+
+---------------------------
+
+# Shell Scrips
+
+1. create a file by doing nano middle.sh
+2. in the file, put in it, head -n 15 octane.pdb | tail -n 5
+3. exit the file
+4. execute the script ~ bash middle.sh
+5. edit middle.sh with head -n 15 "$1" | tail -n 3
+6. $1 means the first filename or other argument, on the cli
+7. exit and run bash middle.sh octane.pdb
+8. Edit middle.sh to include comments for the next person # select lines from middle of file # usage: bash middle.sh filename end_line num_lines
+- $@ means 'all of the command-line arguments to the shell script'
+9. nano sorted.sh
+10. wc - l "$@" | sort -n
+11. bash sorted.sh *.pdb ../creates/*.dat
