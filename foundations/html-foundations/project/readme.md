@@ -1,0 +1,1 @@
+# Quick HTML recipe project
