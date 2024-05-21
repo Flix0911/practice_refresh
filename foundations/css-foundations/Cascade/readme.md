@@ -155,5 +155,48 @@ h1 {
 
 ### Inhertance
 
+- Inheritance refers to certain CSS properties that, when applied to an element, are inherited by that element's descendants, even if not explicitly written
+- Typography-based properties (color, font-size, font-family, etc) are usually inhertied, while others properties aren't
+- Exception is when directly targeting an element, as this always beats inheritance
+
+```html
+<div id="parent">
+    <div class="child"></div>
+</div>
+```
+
+```CSS
+#parent {
+    color: red;
+}
+
+.child {
+    color: blue;
+}
+```
+
+- Despite the parent element having a higher specificity with an ID, the child element would have the color: blue styled applied. This is ebcause the declaration is directly targeting it, while color:red from the parent is only inherited
+
+---
+
+### Rule order
+
+- The tie-breaker of tie-breakers
+- Whichever rule was the last defined is the winner
+
+```CSS
+.alert {
+    color: red;
+}
+
+.warning {
+    color: yelllow;
+}
+```
+
+- For an element that has both the alert and warning classess, the cascade would run through every other facotr, including inheritance (none here) and specificity (neither rule is more specific than the other)
+- Since .warning rule was the last one defined, and no toerh factor was able to determine which rule to apply, it's the one that gets applied to the element
+
+
 
 
