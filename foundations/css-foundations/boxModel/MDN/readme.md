@@ -30,3 +30,14 @@
     - Left and right padding, margins, and borders will apply and will cause other inline boxes to move away from the box
 
 - Fun fact: some HTML elements like a, span, em, and strong, use *inline* as their outer display type by default
+
+---
+
+# Inner Display type
+
+- Boxes also have an *inner* display type ~ dictares how elements inside the box are laid out
+
+- Block and inline layout is the default way for things to behave on the web
+- By default and without any other instruction, elemetns inside a box are also laid out in a normal flow
+- You can change this via *display: flex;* ~ the element will still use the outer display type of *block* but this changes the inner display type to flex
+    - Will learn more about flexbox later
