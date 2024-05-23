@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+}
+
+.box-one {
+    background-color: red;
+    padding: 10px; /* content around the element */
+    height: 100px;
+    width: 100px;
+    border: 20px solid purple; /* increase the padding around the border */
+    margin: 60px; /* outside of our border */
+    /* box-sizing: border-box; /* height and width account for padding and border 8? */
+}
+
+.box-two {
+    background-color: blue;
+    padding: 10px; /* content around the element */
+    height: 100px;
+    width: 100px;
+    border: 30px solid green;
+    margin: 100px; /* margin colapses between 2 elements connected to each other */
+}
