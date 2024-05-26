@@ -1,0 +1,30 @@
+* {
+    outline: 2px solid red;
+    background-color: azure;
+}
+
+.title {
+    font-size: 64px;
+    background-color: rgb(42, 178, 190);
+    margin: auto;
+    padding: 8px;
+    border: 20px solid purple;
+    text-align: center;
+    width: 500px;
+}
+
+.links {
+    font-size: 25px;
+    padding: 10px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    background-color: bisque;
+    width: 500px;
+}
+
+a {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(235, 223, 207);
+}
