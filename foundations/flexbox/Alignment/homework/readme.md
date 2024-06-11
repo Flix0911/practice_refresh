@@ -40,3 +40,27 @@
 
 - In flexbox, must decide whether the primary axis runs horizontally or vertically
 - This is the root that all flexbox calculations are pegged to
+
+---
+
+## Alignment
+
+- You can change how the children are distributed along the primary axis using the `justify-content` property
+
+- Regarding the primary axis, don't think of aligning a single child but *distribution of the group*
+- You can bunch all the items up in a particular spot ~ `flex-start`, `center`, `flex-end` OR you can spread them apart `space-between`, `space-around`, `space-evenly`
+- *For cross axis*, you want to use `align-items`
+
+- With `align-items`, some of the options will overlap with `justify-content`
+
+![Imgur](https://i.imgur.com/VAiU87B.jpeg)
+
+- Why not share the same options ~ first `align-self`
+
+    - Unlike `justify-content` and `align-items`, `align-self` is applied to the **child element**, not the container
+    - This allows alignment of a specific child along the cross axis
+
+    - `Align-self` has all the same values as `align-items` ~ **they change the exact same thing**
+    - `Align-items` is *syntatic sugar* ~ a convenient shorthand that automatically sets alignment on all the children at once
+    
+- There is no `justify-self`
