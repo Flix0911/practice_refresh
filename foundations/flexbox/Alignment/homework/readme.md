@@ -64,3 +64,39 @@
     - `Align-items` is *syntatic sugar* ~ a convenient shorthand that automatically sets alignment on all the children at once
     
 - There is no `justify-self`
+
+---
+
+## Content vs items
+
+- Why is it `justify-content` and `align-items`, and not `justify-items` or `align-content`?
+    - Why inversly is there `align-self`, but not `justify-self`
+
+- In flexbox, items are distribured along the primary axis. By default, they're nicely lined up, side-by-side (skewer below)
+    - ----[]----[]----[]----  <-(primary axis)
+
+- Cross axis is different. A Straight vertical line will only ever intersect **one** of the children
+- |
+- |
+- []
+- |
+- |
+
+- Notice the above , only 1 item or element is intersected
+
+- When talking about alignment in the **cross** axis, each item can do whatever it wants
+- In the **primary** acis, we can only think about how to distrib ute the group
+    - This is why there is no `justify-self`
+
+- Let us define all 4 terms
+    1. `justify` - to position something along the primary axis
+    2. `align` - to position something along the cross axis
+    3. `content` - a group of "stuff" that can be distributed
+    4. `items` - single items that can be positioned individually
+
+- **And so** 
+    - We have `justify-content` to control distribution of the group along the primary axis
+    - We have `align-items` to position each item individually along the cross axis
+    - These are the main two properties we can use to manage the layout of flexbox
+
+- No `justify-items` for the same reason there is no `justify-self` ~ we have to think of the items as  group, as content that can be distributed 
