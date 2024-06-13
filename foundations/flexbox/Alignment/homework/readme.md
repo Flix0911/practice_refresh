@@ -100,3 +100,24 @@
     - These are the main two properties we can use to manage the layout of flexbox
 
 - No `justify-items` for the same reason there is no `justify-self` ~ we have to think of the items as  group, as content that can be distributed 
+
+--- 
+
+## Hypothetical size
+
+- Evaluate the below css
+```css
+.item {
+    width: 2000px;
+}
+```
+
+- You may think this will give you a width of 2000px
+
+--- 
+
+## Flex-basis
+
+- What is `flex-basis`?
+
+- 
